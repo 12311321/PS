@@ -17,7 +17,10 @@ int main() {
                 dp[i + 1][j] += dp[i][j];
                 if (j + input <= K) {
                     dp[i + 1][j + input] += dp[i][j];
+
                 }
+
+
 
             }
         }
