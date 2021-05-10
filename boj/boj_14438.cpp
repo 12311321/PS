@@ -42,7 +42,7 @@ public:
 			pos = pos * 2 + (m < index);
 		}
 	}
-	void Revise(int index, int data) {
+	void Update(int index, int data) {
 		int npos = leaf[index];
 		tree[npos] = data;
 		npos /= 2;
@@ -82,7 +82,7 @@ int main() {
 	for (int i = 0; i < M; i++) {
 		scanf("%d%d%d", &a, &b, &c);
 		if (a == 1) {
-			sgt.Revise(b, c);
+			sgt.Update(b, c);
 		}
 		else {
 			printf("%d\n", sgt.Search(1, N, 1, b, c));

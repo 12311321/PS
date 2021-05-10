@@ -48,10 +48,10 @@ public:
 	void Swap(int idx1, int idx2) {
 		int a = tree[leaf[idx1]].firstnum;
 		int b = tree[leaf[idx2]].firstnum;
-		Revise(idx1, b);
-		Revise(idx2, a);
+		Update(idx1, b);
+		Update(idx2, a);
 	}
-	void Revise(int idx, int data) {
+	void Update(int idx, int data) {
 		int pos = leaf[idx];
 		tree[pos].firstnum = data;
 		tree[pos].lastnum = data;
@@ -105,7 +105,7 @@ int main() {
 	SGT sgt(N);
 	for (int i = 1; i <= N; i++) {
 		scanf("%d", &Q);
-		sgt.Revise(i, Q);
+		sgt.Update(i, Q);
 	}
 	for (int i = 0; i < M; i++) {
 		scanf("%d%d%d", &Q, &L, &R);
