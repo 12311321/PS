@@ -47,5 +47,25 @@ kotlin -version을 이용하여 설치되었음을 확인하였다.
 ![15-1 코틀린실행](https://user-images.githubusercontent.com/14107670/126297438-c0bba8a1-c74d-4917-9d27-ff72c0eca88d.png)
 kotlinc main.kt 로인해 MainKt.class가 만들어지고 kotlin MainKt로 실행하였다.
 
+# 2. 셸스크립트 자동화
 
+## 2-1. 디렉토리 생성 및 로그 압축 스크립트
+![16 폴더생성과압축_](https://user-images.githubusercontent.com/14107670/126298416-12fa197b-c833-4b1e-a1a6-922dde3698f1.png)
+DATE변수에 시간을 지정해주었고 mkdir의 -p옵션을 이용하여 폴더가 있을경우 무시하도록
+zip [생성파일.zip] 파일1 파일2 를통해 로그파일을 압축하는 스크립트를 작성하였다.
+
+## 2-2. 로그파일 복사 스크립트
+![17 로그복사_](https://user-images.githubusercontent.com/14107670/126299113-98f02abd-27b0-4d66-a2a2-9553c9d77845.png)
+cp명령어와 -p옵션을 통해 강제로 복사하도록 구현하였다.
+
+## 2-3. 크론탭
+![18 크론탭_](https://user-images.githubusercontent.com/14107670/126300098-c8a80367-12c4-4e47-afc7-51dcfeedf4c4.png)
+![19 크론탭_생성](https://user-images.githubusercontent.com/14107670/126299878-36ff6a1c-61c5-48ab-aa18-161ed5b81c80.png)
+![19-2 크론탭_비교1](https://user-images.githubusercontent.com/14107670/126299883-b339094c-d4c7-411a-977b-92eba3b86634.png)
+
+manageLog.sh는 5분마다 실행하도록, copyLog.sh는 매시간 29분, 59분에 실행하도록 구현하였다.
+
+## 2-4. 로컬로 복사
+![20 로컬로전송_](https://user-images.githubusercontent.com/14107670/126300128-1c191524-4755-4f52-a806-4963ebaa7a96.png)
+scp명령어를 통해 /home/K009/backup 을 /home/K009/temp 폴더로 전송
 
