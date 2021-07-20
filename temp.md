@@ -32,6 +32,20 @@ sudo userpwd [ID] 를 통해 K009라는 계정에 비밀번호를 설정했다.
 
 mkdir backup 을 통해 디렉토리를 생성하고 chmod를 통해 권한을 바꾼것을 ls -l을 통해 확인하였다.
 
-## 1-6. 오늘날짜 + 서울 시간대로 동기화
+## 1-6. 오늘날짜 + 서울 시간대로 동기화 및 출력
+![12 시간동기화](https://user-images.githubusercontent.com/14107670/126296361-adc2998b-31ac-4463-aa5a-e5a792681e3d.png)
+우측하단의 시간과 비교하면 동기화된 것을 확인할 수 있다.
+
+## 1-7. 코틀린 설치 및 실행
+![13 코틀린설치_](https://user-images.githubusercontent.com/14107670/126297140-f8da76ed-8259-4339-9a6c-21db4ff85589.png)
+![14 코틀린설치2_](https://user-images.githubusercontent.com/14107670/126297189-d5f17eb2-4bc3-4759-8ac0-e0b2bbb1f580.png)
+![14-2 코틀린버전_](https://user-images.githubusercontent.com/14107670/126297195-7cc88144-9f85-41e3-bfc6-c1bc3e495ae5.png)
+위의 두 명령어를 통해 코틀린을 설치하고
+
+kotlin -version을 이용하여 설치되었음을 확인하였다.
+
+![15-1 코틀린실행](https://user-images.githubusercontent.com/14107670/126297438-c0bba8a1-c74d-4917-9d27-ff72c0eca88d.png)
+kotlinc main.kt 로인해 MainKt.class가 만들어지고 kotlin MainKt로 실행하였다.
+
 
 
