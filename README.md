@@ -12,7 +12,7 @@
 
 ### 프로그래머스
 
-## https://programmers.co.kr/learn/challenges
+## https://programmers.co.kr/
 
 ### SW Expert Academy
 
