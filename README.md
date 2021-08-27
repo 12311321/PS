@@ -6,10 +6,9 @@
 
 ### 백준 온라인 저지 
 
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=b643100)](https://solved.ac/b643100/)
-
-
 ## https://www.acmicpc.net/
+
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=b643100)](https://solved.ac/b643100/)
 
 ### 프로그래머스
 
