@@ -8,8 +8,6 @@
 
 ## https://www.acmicpc.net/
 
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=b643100)](https://solved.ac/b643100/)
-
 ### 프로그래머스
 
 ## https://programmers.co.kr/
