@@ -46,9 +46,9 @@ fun main() {
     val lazySegTree = LazySegTree(N)
     repeat(N){ lazySegTree.insertData(it+1,it+1,br.readLine().toLong()) }
     repeat(M+K){
-        br.readLine().split(' ').map{it.toInt()}.run{
-            if(get(0)==1) lazySegTree.insertData(get(1),get(2),get(3).toLong())
-            else bw.write("${lazySegTree.searchData(get(1),get(2))}\n")
+        br.readLine().split(' ').map{it.toLong()}.run{
+            if(get(0)==1L) lazySegTree.insertData(get(1).toInt(),get(2).toInt(),get(3))
+            else bw.write("${lazySegTree.searchData(get(1).toInt(),get(2).toInt())}\n")
         }
     }
     bw.close()
